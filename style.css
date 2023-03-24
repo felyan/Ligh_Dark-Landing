@@ -29,6 +29,9 @@ a {
 }
 
 .big-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1.7rem 0 2rem;
   width: 100%;
   min-height: 100vh;
@@ -100,4 +103,35 @@ header .container {
 .btn:hover {
   background-color: var(--hoverColor);
   transform: scale(1) !important;
+}
+
+.showcase-area .container {
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.big-title {
+  font-size: 1.4rem;
+  color: var(--darkOne);
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.text {
+  color: var(--lightOne);
+  font-size: 1.1rem;
+  margin: 1.9rem 0 2.5em;
+  max-width: 600px;
+  line-height: 2;
+}
+
+.showcase-area .btn {
+  box-shadow: 0 0 40px 2px rgba(0,0,0,0.05);
+}
+
+.person {
+  width: 123%;
+  transform: translate(15%, 25px);
 }
